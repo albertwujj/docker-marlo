@@ -32,6 +32,13 @@ RUN cd /opt \
     && python3 -c 'import malmo.minecraftbootstrap; malmo.minecraftbootstrap.download()' \
     && chown -R user:user MalmoPlatform/
 
+# Set the locale
+RUN sed -i -e 's/# en_US.UTF-8 UTF-8/en_US.UTF-8 UTF-8/' /etc/locale.gen && \
+    locale-gen
+ENV LANG en_US.UTF-8  
+ENV LANGUAGE en_US:en  
+ENV LC_ALL en_US.UTF-8   
+
 ENV MALMO_MINECRAFT_ROOT /opt/MalmoPlatform/Minecraft
 ENV MALMO_XSD_PATH /opt/MalmoPlatform/Schemas
 
