@@ -1,5 +1,3 @@
-# SHIT DOES NOT WORK, will add tests to Makefile
-
 # docker-reinforcement-learning
 
 Reinforcement learning environment for [marLo](https://github.com/crowdAI/marLo), a Reinforcement Learning environment that is more widely useful than the single competition it was used in. 
