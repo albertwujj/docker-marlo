@@ -14,7 +14,7 @@ build:
 		--build-arg VCS_REF=`git rev-parse --short HEAD` \
 		--build-arg VCS_URL=`git config --get remote.origin.url` \
 		--build-arg BUILD_DATE=`date -u +"%Y-%m-%dT%H:%M:%SZ"` \
-		--cpu-period=1000000 --cpu-quota=3000000 --cpuset-cpus 0-2 \
+		--cpu-period=1000000 --cpu-quota=3000000 --cpuset-cpus 0-1 \
 		.
 
 .PHONY: build
