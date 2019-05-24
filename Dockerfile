@@ -8,12 +8,17 @@ ENV DEBIAN_FRONTEND oninteractive
 ############################################
 RUN apt-get update --fix-missing && apt-get install -y \
       python3-numpy python3-matplotlib python3-dev \
-      python3-opengl python3-pip \
+      python3-opengl python3-pip locales \
       cmake zlib1g-dev libjpeg-dev xvfb libav-tools \
       xorg-dev libboost-all-dev libsdl2-dev swig \
       git wget openjdk-8-jdk unzip \
       less vim lxterminal mesa-utils \
     && apt-get clean && rm -rf /var/cache/apt/archives/* /var/lib/apt/lists/*
+
+RUN locale-gen en_US.UTF-8  
+ENV LANG en_US.UTF-8  
+ENV LANGUAGE en_US:en  
+ENV LC_ALL en_US.UTF-8  
 
 ############################################
 # Change the working directory
