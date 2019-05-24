@@ -1,14 +1,12 @@
+
 # docker-reinforcement-learning
 
-This is docker image for marlo, reinforcement-learning environment.
-This image is installed ...
+Reinforcement learning environment for [marLo](https://github.com/crowdAI/marLo), a Reinforcement Learning environment that is more widely useful than the single competition it was used in. 
 
-* marlo
-* malmo
+Modified version of ikeyasu's container with U.S. localization and '0-1' cpu. The error message when building told me to switch it from '0-2' to '0-1'. Just follow the error messages when you are building. Requires a lot of memory, I had to use cloud compute.
 
-This image is based on [ikeyasu/opengl:ubuntu16.04](https://hub.docker.com/r/ikeyasu/docker-opengl/).
-[ikeyasu/opengl] is based on [thewtex/opengl](https://hub.docker.com/r/thewtex/opengl/).
+For use as-is see the [Docker repo](https://cloud.docker.com/u/albertwujj/repository/docker/albertwujj/dmarlo)
 
 ## Quickstart
+cd into repo and docker build .
 
-T.B.D
