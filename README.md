@@ -8,5 +8,5 @@ Modified version of ikeyasu's container with U.S. localization and '0-1' cpu. Th
 For use as-is see the [Docker repo](https://cloud.docker.com/u/albertwujj/repository/docker/albertwujj/dmarlo)
 
 ## Quickstart
-docker build .
+cd into repo and docker build .
 
